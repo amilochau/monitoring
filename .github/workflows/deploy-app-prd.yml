@@ -1,4 +1,4 @@
-name: Deploy application (DEV)
+name: Deploy application (PRD)
 
 on:
   workflow_dispatch:

@@ -8,7 +8,7 @@ concurrency: deploy_app_dev
 env:
   INFRA_TEMPLATE_PATH: '**/monitoring/template.bicep'
   INFRA_PARAMETERS_PATH: '**/.github/infrastructure/deploy-app.prd.json'
-  INFRA_RG_NAME: 'mil-rg-monitoring-prd'
+  INFRA_RG_NAME: 'mil-monitoring-prd-rg'
   INFRA_RG_LOCATION: 'westeurope'
 
 jobs:

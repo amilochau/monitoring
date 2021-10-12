@@ -8,14 +8,11 @@
     "applicationName": {
       "value": "monitoring"
     },
-    "environmentName": {
-      "value": "Production"
-    },
     "hostName": {
       "value": "prd"
     },
-    "dailyCap": {
-      "value": "0.05"
+    "pricingPlan": {
+      "value": "Free"
     }
   }
 }

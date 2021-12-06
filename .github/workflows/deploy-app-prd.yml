@@ -3,7 +3,7 @@ name: Deploy application (PRD)
 on:
   workflow_dispatch:
 
-concurrency: deploy_app_dev
+concurrency: deploy_app_prd
 
 env:
   INFRA_TEMPLATE_PATH: './templates/monitoring/template.bicep'
@@ -16,6 +16,7 @@ jobs:
   deploy_infra:
     name: Deploy infrastructure
     runs-on: ubuntu-latest
+    environment: PRD
     steps:
       - uses: actions/checkout@v2 # For parameters file
         with:

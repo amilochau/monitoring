@@ -2,6 +2,12 @@ name: Deploy application (PRD)
 
 on:
   workflow_dispatch:
+    inputs:
+      forceDeployment:
+        description: Force infrastructure deployment if the last infrastructure template used is the same as the current one
+        required: false
+        default: false
+        type: boolean
 
 concurrency: deploy_app_prd
 
@@ -30,3 +36,4 @@ jobs:
           scopeLocation: ${{ env.INFRA_RG_LOCATION }}
           templateType: ${{ env.INFRA_TYPE }}
           parametersFilePath: ${{ env.INFRA_PARAMETERS_PATH }}
+          forceDeployment: ${{ github.event.inputs.forceDeployment }}

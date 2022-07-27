@@ -16,7 +16,7 @@ env:
   INFRA_PARAMETERS_PATH: './application/.github/infrastructure/deploy-app.dev.json'
   INFRA_RG_NAME: 'mil-monitoring-dev-rg'
   INFRA_RG_LOCATION: 'westeurope'
-  TEMPLATES_VERSION: v8
+  TEMPLATES_VERSION: v9
 
 jobs:
   deploy_infra:
